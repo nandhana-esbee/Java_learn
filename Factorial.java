@@ -1,5 +1,5 @@
 import java.util.*;
-class main1{
+class Factorial{
     public static void main(String args[]){
         int fact=1,num,i;
         System.out.println("Enter a number:");
