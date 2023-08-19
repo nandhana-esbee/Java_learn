@@ -4,6 +4,7 @@ public class Ast_hash {
        Scanner sc=new Scanner(System.in);
        System.out.println("Enter string containing # and * only");
        String str1=sc.nextLine();
+       sc.close();
        int counthash=0,countstar=0;
        //System.out.println(+x+"\t"+str1.charAt(1));
        for(int i=0;i<str1.length();i++){

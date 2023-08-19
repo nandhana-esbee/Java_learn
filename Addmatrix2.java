@@ -21,6 +21,7 @@ public class Addmatrix2 {
             add2[i][j]=sc.nextInt();
         }
        }
+       sc.close();
        for(int i=0;i<rows;i++){
         for(int j=0;j<cols;j++){
             sum1[i][j]=add1[i][j]+add2[i][j];

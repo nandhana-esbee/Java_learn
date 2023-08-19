@@ -8,6 +8,7 @@ public class Digit {
         System.out.println(str1.length());
         System.out.println("Enter a digit:");
         int digit=inp.nextInt();
+        inp.close();
         int count=0;
         do{
             count++;

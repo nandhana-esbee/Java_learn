@@ -9,6 +9,7 @@ public class Vehicle {
         Totvehicle=veh.nextInt();
         System.out.println("Enter the number of wheels: ");
         Totwheels=veh.nextInt();
+        veh.close();
         numtwo=(Totwheels/2)-Totvehicle;
         numfour=Totvehicle-numtwo;
         System.out.println("Number of four wheelers="+Math.abs(numfour)+"\nNumber of two wheelers="+Math.abs(numtwo));

@@ -13,6 +13,7 @@ class calcu{
         Scanner sc=new Scanner(System.in);
            num1=sc.nextInt();
            num2=sc.nextInt();
+           sc.close();
            }
         public void add(){
             System.out.println("\nValue:"+(num1+num2)+"\n");
@@ -43,6 +44,7 @@ class calcu{
        System.out.println("Select an operation to perform:\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Quotient\n5.Remainder\n6.Exit");
        Scanner sc=new Scanner(System.in);
        option=sc.nextInt();
+       sc.close();
        switch(option){
         case 1:inpu();add();option();
         break;

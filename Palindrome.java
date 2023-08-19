@@ -6,6 +6,7 @@ public class Palindrome {
         System.out.println("Enter a Number: ");
         Scanner nu=new Scanner(System.in);
         int num=nu.nextInt();
+        nu.close();
         int copynum=num;
         int count=0;
         do{
