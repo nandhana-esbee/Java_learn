@@ -1,26 +1,15 @@
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
 import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
 import java.util.stream.*;
-import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
 class Result {
 
-    /*
-     * Complete the 'gradingStudents' function below.
-     *
-     * The function is expected to return an INTEGER_ARRAY.
-     * The function accepts INTEGER_ARRAY grades as parameter.
-     */
+    // criteria : if the difference between the grade and the next multiple of 5 is less than 3, round grade up to the next multiple of 5.
+    // if the value of grade is less than 38, no rounding occurs as the result will still be a failing grade.
 
     public static List<Integer> gradingStudents(List<Integer> grades) {
-    // Write your code here
+
     int n=grades.size();
     for(int i=0;i<n;i++)
     {
@@ -42,7 +31,6 @@ class Result {
 public class grade{
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-       // BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
         int gradesCount = Integer.parseInt(bufferedReader.readLine().trim());
 
@@ -60,14 +48,6 @@ public class grade{
         List<Integer> result = Result.gradingStudents(grades);
         System.out.println(result);
 
-      /* bufferedWriter.write(
-            result.stream()
-                .map(Object::toString)
-                .collect(joining("\n"))
-            + "\n"
-        );*/
-
         bufferedReader.close();
-       // bufferedWriter.close();
     }
 }
