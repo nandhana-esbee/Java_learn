@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class hello{
 
     public static void main(String[] args) {
-       /* Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         int I = scan.nextInt();
 
         // Write your code here.
@@ -27,7 +27,7 @@ public class hello{
             System.out.printf("%-14s %03d%n",s1,x);
         }
         sc.close();
-        System.out.println("================================");*/
+        System.out.println("================================");
         //int a;
         checking obj=new checking();
         obj.hellomethod();
