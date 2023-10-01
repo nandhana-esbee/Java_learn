@@ -15,3 +15,5 @@ public class Vehicle {
         System.out.println("Number of four wheelers="+Math.abs(numfour)+"\nNumber of two wheelers="+Math.abs(numtwo));
     }
 }
+
+
